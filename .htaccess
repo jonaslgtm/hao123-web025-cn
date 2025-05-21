@@ -1,0 +1,29 @@
+# 保护敏感文件
+<Files "config.php">
+Order Allow,Deny
+Deny from all
+</Files>
+
+<Files "database.sql">
+Order Allow,Deny
+Deny from all
+</Files>
+
+# 防止目录浏览
+Options -Indexes
+
+# 设置默认字符集
+AddDefaultCharset UTF-8
+
+# 启用URL重写引擎
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# 如果请求的是真实存在的文件或目录，则不进行重写
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# 将所有其他请求重定向到index.php
+RewriteRule . index.php [L]
+</IfModule>
