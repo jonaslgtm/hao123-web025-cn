@@ -20,7 +20,9 @@ $conn->close();
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>    <?php include_once 'include/navbar.php'; ?>
+<body>    
+    <!-- 顶部导航栏 -->       
+    <?php include_once 'include/navbar.php'; ?>
 
     <div class="container-fluid">
         <div class="row">

@@ -16,7 +16,9 @@ requireLogin();
     <link rel="stylesheet" href="assets/css/api-docs.css">
 
 </head>
-<body>    <?php include_once 'include/navbar.php'; ?>
+<body>    
+    <!-- 顶部导航栏 -->        
+    <?php include_once 'include/navbar.php'; ?>
 
     <div class="container-fluid">
         <div class="row">

@@ -156,7 +156,8 @@ $conn->close();
     
 </head>
 <body>
-    <!-- 顶部导航栏 -->    <?php include_once 'include/navbar.php'; ?>
+    <!-- 顶部导航栏 -->    
+    <?php include_once 'include/navbar.php'; ?>
 
     <div class="container-fluid">
         <div class="row">
