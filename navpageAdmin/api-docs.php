@@ -15,14 +15,7 @@ requireLogin();
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/api-docs.css">
 </head>
-<body>
-    <nav class="navbar navbar-light fixed-top flex-md-nowrap shadow">
-        <a class="navbar-brand" href="dashboard.php">网站导航管理系统</a>
-        <div class="navbar-user">
-            <span class="user-name">欢迎，<?php echo htmlspecialchars($_SESSION['username']); ?></span>
-            <a href="logout.php" class="btn btn-sm btn-outline-secondary">退出</a>
-        </div>
-    </nav>
+<body>    <?php include_once 'include/navbar.php'; ?>
 
     <div class="container-fluid">
         <div class="row">
