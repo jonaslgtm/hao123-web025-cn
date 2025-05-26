@@ -1,9 +1,9 @@
 <?php
 // 数据库连接配置
-define('DB_HOST', 'qdm817956668.my3w.com');
-define('DB_USER', 'qdm817956668'); // 请修改为您的数据库用户名
-define('DB_PASS', 'Mysql@10245089'); // 请修改为您的数据库密码
-define('DB_NAME', 'qdm817956668_db');
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root'); // 请修改为您的数据库用户名
+define('DB_PASS', 'mysql123456'); // 请修改为您的数据库密码
+define('DB_NAME', 'navpage_db');
 
 // 建立数据库连接
 function connectDB() {
