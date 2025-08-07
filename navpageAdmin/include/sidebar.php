@@ -18,6 +18,16 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'articles.php' ? 'active' : ''; ?>" href="articles.php">
+                    <i class="bi bi-file-text"></i> 文章管理
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'article-categories.php' ? 'active' : ''; ?>" href="article-categories.php">
+                    <i class="bi bi-folder"></i> 文章分类
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'api-docs.php' ? 'active' : ''; ?>" href="api-docs.php">
                     <i class="bi bi-code-slash"></i> API接口
                 </a>
